@@ -1,0 +1,33 @@
+h1{
+    color: rgb(255, 255, 255);
+    font-style: Arial  ;
+    box-shadow: 19px 19x;
+    text-align: center;
+    background-color: blueviolet;
+}
+h2{
+    color: blueviolet;
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+ul#box{
+    text-align: center;
+    font-size: 18pt;
+    
+}
+p#perfil{
+    text-align: center;
+}
+body{
+    background-color: rgb(255, 150, 255);
+}
+footer#copy{
+    font: italic;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+

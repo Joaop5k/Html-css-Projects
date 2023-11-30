@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(102, 19, 54);
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+    color: white;
+    
+}
+h2{
+    text-align: center;
+    color: white;
+}
+h1{
+    color: white;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    text-decoration: solid;
+    font-style: arial;
+}
+h3{
+    color: white;
+}
