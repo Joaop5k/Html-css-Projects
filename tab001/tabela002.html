@@ -12,7 +12,7 @@
         }
 
         table{
-            width: 500px;
+            width: 600px;
             border-collapse: collapse;
         }
 
@@ -20,6 +20,10 @@
             border: 1px solid black;
             padding: 10px;
             
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: rgb(0, 255, 251);
         }
 
         thead, tfoot{
@@ -30,6 +34,15 @@
         td.num{
             text-align: right;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background: rgb(24, 191, 242);
+            color: white;
+
+        }
     </style>
 </head>
 <body>
@@ -38,6 +51,7 @@
     <!--Anatomia para tabelas grandes
     Tabless
         TABLE
+            CAPTION
             THEAD
               tr, td, th
             TBODY
@@ -47,10 +61,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
 
@@ -99,7 +114,7 @@
 
         <tfoot>
             <tr>
-                <th>
+                <th scope="row">
                     Total de Habitantes
                 </th>
                 <td>000</td>
