@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 600px;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid purple;
+            padding: 10px;
+        }
+
+        th{
+            background-color: rgb(156, 43, 226);
+            color: white;
+            padding: 10px;
+        }
+        
+        tfoot{
+            background-color: rgb(156, 43, 226);
+            color: white;
+        }
+
+        th {
+            position: sticky;
+            top: 0;
+        }
+
+        .destaque{
+            background-color: yellow;
+        }
+        
+        col.cnome{
+            background-color: rgb(55, 255, 0);
+        }
+
+        col.csexo{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicios de tabelas</h1>
+
+    <table>
+        <colgroup>
+        <col class="cnome">
+        <col class="csexo" span="3">
+        <col class="cidade">
+        <col class="cprof">
+    </colgroup>
+        <caption> CADASTRO </caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>Jornalista</td>
+            </tr>
+
+            <tr>
+                <td>Flavio</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Publicidade</td>
+            </tr>
+
+            <tr>
+            <td>Henrique</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Médico</td>
+        </tr>
+
+        <tr>
+            <td>Lucélia</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Venderora</td>
+        </tr>
+
+        <tr>
+            <td>Karla</td>
+            <td>F</td>
+            <td>45</td>
+            <td>Operadora de caixa</td>
+        </tr>
+
+        <tr>
+            <td>Gutavo</td>
+            <td>M</td>
+            <td>25</td>
+            <td>vendedor</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
