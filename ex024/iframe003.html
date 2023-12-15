@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+        .error{
+            color: red;
+        }
+</style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis delectus earum adipisci ratione ab id facilis, dolore, libero reprehenderit architecto vel hic saepe blanditiis unde laborum omnis tenetur molestias illo!</p>
+        <ul>
+            <li><a href="paginas extras/pag01.html" target="frame">primeira página</a></li>
+            <li><a href="paginas extras/pag002.html" target="frame">Segunda página</a></li> 
+            <li><a href="paginas extras/pag003.html" target="frame">Terceira página</a></li>
+        </ul>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, sapiente? Itaque iure incidunt quam atque iusto velit voluptas, dolores iste porro officia nam fugit illum, omnis rerum blanditiis quis. Harum?</p>
+
+    <iframe srcdoc="<h1> Escolha uma das opções acima</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab repellat repellendus sequi libero eum sed reiciendis facere ullam iure ad laudantium impedit iusto quia repudiandae, dolorum doloribus. Officiis, tenetur quam!</p>
+        
+        " frameborder="0" id="tela" name="frame">
+        <p class="error">infelizmente seu navegador não é compativél com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab repellat repellendus sequi libero eum sed reiciendis facere ullam iure ad laudantium impedit iusto quia repudiandae, dolorum doloribus. Officiis, tenetur quam!</p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, molestias ipsum? Hic ipsa dignissimos et repellendus recusandae sequi ad, vero nihil tempore sapiente laboriosam, magni id cumque. Labore, beatae nemo!
+    </p>
+</body>
+</html>
