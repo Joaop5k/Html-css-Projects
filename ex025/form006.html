@@ -7,12 +7,22 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on"></form>
+    <form action="cadastro.php" method="POST" autocomplete="on"></form>
     <p>
         <label for="icor">Cor:</label>
-        <input type="color" name="cor" id="icor">
+        <input type="color" name="cor" id="icor" value="#00ff00">
     </p>
 
+    <p>
+        <label for="inivel">Nivel de satisifação</label>
+        <input type="range" name="Nivel" id="inivel" min="1" max="10" value="1">
+    </p>
+
+    <p>
+        <label for="foto">Foto do perfil</label>
+        <input type="file" name="Foto" id="ifoto">
+    </p>
+<!--Quando for envio de arquivo tem que usar o  método posst-->
     <p>
         <input type="submit" value="enviar">
         <input type="reset" value="Limpar">
