@@ -7,12 +7,12 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadass
-    " method="get" autocomplete="on"></form>
+    <form action="form.js" method="post">
 
     <p>
         <label for="iest">Estado</label>
         <select name="Estado" id="iest">
+            <option value="" selected>---Escolha---</option>
             <optgroup label="região sudeste">
                 <option value="MG">Minas Gerais</option>
                 <option value="RJ">Rio de Janeiro</option>
@@ -26,10 +26,24 @@
             </optgroup>
         </select>
     </p>
-
+    <p>
+        <label for="iprof">Profissão</label>
+        <input type="text" name="Prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option value="ADM">Administrador</option>
+            <option value="CONT">Contabilista</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option value="PROF">Professor</option>
+        </datalist>
+    </p>
+    <p>
+       <p><label for="imsg">Mensagem:</label></p> 
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+    </p>
     <p>
         <input type="submit" value="enviar">
         <input type="reset" value="limpar">
     </p>
+    </form>
 </body>
 </html>
